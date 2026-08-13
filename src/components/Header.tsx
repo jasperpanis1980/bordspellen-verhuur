@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { auth, signOut } from "@/auth";
+import { InstallAppButton } from "@/components/InstallAppButton";
 
 export async function Header() {
   const session = await auth();
@@ -38,6 +39,7 @@ export async function Header() {
               Beheer
             </Link>
           )}
+          <InstallAppButton />
           {session?.user ? (
             <form
               action={async () => {
