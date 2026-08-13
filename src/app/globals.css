@@ -29,6 +29,13 @@
     --background: #1a0408;
     --foreground: #f5eee2;
     --cream-muted: #2a1216;
+    /* The light-mode burgundy (#7a1830) is used as text/link color in many
+       places (prices, active states). Against the near-black dark-mode
+       background it drops to ~1.7:1 contrast (WCAG needs 4.5:1), making it
+       nearly invisible. Brighten it for dark mode; ~5:1 against both the
+       page background and card backgrounds. */
+    --primary: #e8475f;
+    --primary-hover: #c93850;
   }
 }
 
